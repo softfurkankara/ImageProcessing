@@ -2,13 +2,13 @@
 """
 Arkadaşlar, Hough Circles algoritmasıyla çember tanıyabileceğimiz bir alternatif yöntem.
 Deneyebileceğiniz bazı paramatreler ve örnek değerler:
-    - medianBlur yerine direk (3x3) ya da (5x5) kernel ile 'blur' fonksiyonunu deneyebilirsiniz. (18. satır)
+    - medianBlur yerine direk (3x3) ya da (5x5) kernel ile 'blur' fonksiyonunu deneyebilirsiniz. (25. satır)
     - param1 değeri: Canny edge detektörü için üst threshold değeri.(Çok arttırısanız program yavaşlar ve çökebilir eğer çok 
-        azaltırsanız ise Edge detector beklenen performansı veremez. Kendim deneyerek en optimal değerin 100 olduğunu gördüm. (24. satır)
-    -param2 parametresi: Center detektörü için threshold değeri. 
-    -minRadius parametresi: Yakalanması gereken minimum radius değeri, verilmezse default olarak 0 atanır.
-    -maxRadius parametresi: Yakalanması gereken maximum radius değer, verilmezse default olarak 0 atanır.
-    -cv2.HOUGH_GRADIENT: Bu bizim tespit etme için kullanacagımız algoritma. Şu anda OpenCV'deki tek mevcut algoritma.
+        azaltırsanız ise Edge detector beklenen performansı veremez. Kendim deneyerek en optimal değerin 100 olduğunu gördüm. (29. satır)
+    -param2 parametresi: Center detektörü için threshold değeri. (29. satır)
+    -minRadius parametresi: Yakalanması gereken minimum radius değeri, verilmezse default olarak 0 atanır. (29. satır)
+    -maxRadius parametresi: Yakalanması gereken maximum radius değer, verilmezse default olarak 0 atanır. (29. satır)
+    -cv2.HOUGH_GRADIENT: Bu bizim tespit etme için kullanacagımız algoritma. Şu anda OpenCV'deki tek mevcut algoritma. (29. satır)
 
 
     daha fazla bilgi için buradan HOUGH_GRADIENT parametrelerine bakabilirsiniz:https://docs.opencv.org/3.4/dd/d1a/group__imgproc__feature.html#ga47849c3be0d0406ad3ca45db65a25d2d
